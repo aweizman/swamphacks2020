@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.swamphacks.swamphacks_android.profile.HackerProfileFragment"
+    android:id="@+id/fragment_hacker_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_width="248dp"
+            android:layout_height="234dp"
+            app:srcCompat="@android:drawable/picture_frame"
+            android:id="@+id/qr_image"
+            android:layout_marginTop="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/profile_name"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/profile_email"
+            android:layout_below="@+id/profile_name"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</FrameLayout>
